@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./Style.css"
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Ingressos</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">    
+</head>
+<body>
+  <aside>
+    <h2>Tabela do Exercício </h2>    
+    <table style="width:auto">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Nome Produto</th>
+          <th>Preço</th>
+          <th>Remover</th>                 
+        </tr>
+      </thead>
+      <tbody id="produtos">
+      </tbody>
+    </table>
+    <button class="btnAdicionar" type="button" id="btnadcionap" onclick="mostraFormulario()" > Adiciona novo Item </button>
+  </aside>              
+  <form action="/action_page.php" id="formAdiciona" hidden>        
+    <fieldset>
+        <legend> Dados para novo Item </legend>
+        <label class="labels" for="fid">ID Produto : </label>
+        <input class="inputs" type="number" id="fid" name="fid" disabled="true" required><br><br>
+
+        <label class="labels" for="fnome">Nome Produto : </label>
+        <input class="inputs" type="text" id="fnome" name="fnome" required><br><br>
+
+        <label class="labels" for="fpreco">Preço : </label>
+        <input class="inputs" type="text" id="fpreco" name="fpreco" required><br><br>
+        <button class="btnOperacoes" type="button" onclick="limpaCampos()"> Limpar </button>                
+        <button class="btnOperacoes" type="button" onclick="fechaFormulario()"> Cancelar </button>        
+        <button class="btnOperacoes" type="button" onclick="salvaProduto()"> Salvar </button>
+    </fieldset>
+  </form>             
+
+
+  <script src="./Main.js"></script>
+</body>
+</html>

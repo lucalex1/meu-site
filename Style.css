@@ -1,0 +1,121 @@
+ body{ 
+  display: flex;
+  justify-content: flex-start;  
+  flex-direction: column;
+}
+
+
+aside{ 
+  margin-left: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+h2{
+  color: blue;  
+  font-weight: bold;
+  /* margin-left: 15px;     */
+}
+
+
+thead {
+  color: black;
+  background-color: rgb(190 231 191);
+  text-align: left;
+}
+
+tbody {
+  color: black;
+} 
+
+table, th, td {
+   border: 2px solid black;
+   align-self: center;
+   padding-left: 10px;     
+   padding-right: 10px;        
+   /* padding-bottom : 10px;        */
+   border-collapse: collapse;  
+   /* width: 50%; */
+}
+
+
+#primeiraColuna {
+  color: black;
+  background-color:rgb(251 251 218);
+  font-weight: bold;
+}
+
+/*
+ #colunaBotao { 
+  width: 40%;
+  height: 40%;
+}*/
+
+
+.button1 {
+
+  background-color: white; 
+  color: black;
+  /* border: 2px solid #008CBA; */
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block;  */
+  display: block;
+  font-size: 16px;
+  /* margin: 4px 2px; */
+  margin: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;    
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.btnAdicionar{
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  /* margin-left: 15px;   */
+}
+
+fieldset {
+  width: 388px;
+  background-color: aquamarine;
+  margin-top: 20px;
+  margin-left: 15px;  
+  padding-top: 20px;
+}
+
+legend {
+  font-weight: bold;  
+  font-size: 20px;  
+  font-family: Segoe UI,Arial,Times New Roman;
+  color: royalblue;
+}
+
+.labels {
+	display: block;
+	float: left;
+	width:150px;
+	margin: 3px 0;
+
+}
+
+.inputs {
+	width:200px;
+}
+
+.btnOperacoes{
+  background-color: #008CBA;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10%;
+	width:89px;  
+}
